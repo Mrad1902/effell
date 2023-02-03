@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b7315c09d.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="n.css">
+        <link rel="stylesheet" href="style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=M+PLUS+1p:wght@100;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="website icon " type="png" href="logo.png">    
+    <title>Effel multiservices</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=21656624088&text=Hello this is the starting message" class="whatsapp">  <i class="fa-brands fa-whatsapp"></i></a>
+ 
+    <!-- start nav bar -->
+ <nav class="nav-bar">
+<div class="container">
+    <div class="burger-icon" onclick="displaynavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <a class="logo"  href="index.html">    <img src="logo.png" alt="">
+    </a>
+    <div class="menu ">
+      <a  href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+      <a class="active"  href="projet.html"><i class="fa-solid fa-person-digging"></i> Nos Projets</a>
+      <a href="contact.html"><i class="fa-solid fa-paper-plane"></i> contactez-nous</a>
+    <div onclick="closer()" class="close">
+        <i  class="fa-solid fa-xmark "></i>
+    </div>
+        <div class="social">
+           <a href="https://www.facebook.com/profile.php?id=100088345226956"><i class="fa-brands fa-facebook-f"></i></a> 
+           <a href="tel:+216 56624088"> <i class="fa-solid fa-phone-volume"></i></a>      
+           <a href="mailto:effel.multiservices@gmail.com"><i class="fa-solid fa-envelope"></i></a>     
+            </div>
+      <img src="n.png" alt="" class="zina right">
+      <img src="n.png" alt="" class="zina left">
+
+
+    </div>
+   <div class="contact"> <a href="contact.html">Contactez-Nous</a></div>
+
+
+
+
+
+
+</div>
+
+
+
+ </nav>
+    
+
+
+
+    <!-- end nav bar -->
+<section class="projets">
+    <h1 class="main-title">Nos Projets</h1>
+    <div class="container">
+     <div class="box">
+        <img src="p1.jpg" alt="">
+     </div>
+     
+     <div class="box">
+        <img src="p2.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p3.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p4.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p5.jpg" alt="">
+     </div>
+    
+     <div class="box">
+        <img src="p7.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p8.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p9.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p10.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p11.jpg" alt="">
+     </div>
+     
+     <div class="box">
+        <img src="p12.jpg" alt="">
+     </div>
+    
+     <div class="box">
+        <img src="p20.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p21.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p22.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p23.jpg" alt="">
+     </div>
+     <div class="box">
+        <img src="p24.jpg" alt="">
+     </div>
+    </div>
+</section>
+
+
+
+
+<!--star footer-->
+<section class="footer">
+    <div class="container">
+        <div class="image"><img src="logo.png" alt="logo de l'entreprise"></div>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100088345226956"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="tel:+216 56624088"> <i class="fa-solid fa-phone-volume"></i></a>      
+            <a href="mailto:effel.multiservices@gmail.com"><i class="fa-solid fa-envelope"></i></a>     
+             </div>
+    
+    <div>&copy; | all rights to  2023 </div>
+     
+    
+    </div>
+    
+    
+    
+    </section>
+    
+    
+    <!--end footer-->
+
+
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+       
+    
+     </ul>
+
+
+    <script>
+        var m=document.querySelector('.menu')
+        var links=document.querySelectorAll('.menu a')
+        var sec=document.querySelector('.about')
+        var img=document.querySelector('.image')
+        var klem=document.querySelector('.about p')
+        
+        window.onscroll = function() {
+            if(window.scrollY >= sec.offsetTop - 200 ){
+        img.style.transform="translateX(0)"; 
+        klem.style.transform="translateX(0)"; 
+        
+        
+         }
+        };
+        
+        function closer(){
+            m.style.transform="translateX(-100%)";
+        }
+        
+        
+        function displaynavbar(){
+            m.style.transform="translateX(0)";
+        }
+        function f(){
+            links.forEach((e)=>{
+        e.classList.remove('active')
+        
+        }
+        )
+           this.classList.add('active')
+        
+        }
+        links.forEach((e)=>{
+        e.addEventListener('click',f)
+        
+        }
+        )
+        
+        
+        
+            </script>
+    
+</body>
+</html>

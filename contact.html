@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b7315c09d.js" crossorigin="anonymous"></script> 
+
+    <link rel="stylesheet" href="n.css">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=M+PLUS+1p:wght@100;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=M+PLUS+1p:wght@100;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="website icon " type="png" href="logo.png">    
+<title>Effel multiservices</title>
+</head>
+<body>
+    <a href="https://api.whatsapp.com/send?phone=21656624088&text=Hello this is the starting message" class="whatsapp">  <i class="fa-brands fa-whatsapp"></i></a>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="burger-icon" onclick="displaynavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a class="logo"  href="index.html">    <img src="logo.png" alt="">
+            </a>
+            <div class="menu ">
+                <a  href="index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+                <a href="projet.html"><i class="fa-solid fa-person-digging"></i> Nos Projets</a>
+                <a class="active"  href="contact.html"><i class="fa-solid fa-paper-plane"></i> contactez-nous</a>
+            <div onclick="closer()" class="close">
+                <i  class="fa-solid fa-xmark "></i>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100088345226956"><i class="fa-brands fa-facebook-f"></i></a> 
+                <a href="tel:+216 56624088"> <i class="fa-solid fa-phone-volume"></i></a>      
+                <a href="mailto:effel.multiservices@gmail.com"><i class="fa-solid fa-envelope"></i></a>     
+                 </div>
+           <img src="n.png" alt="" class="zina right">
+           <img src="n.png" alt="" class="zina left">
+        
+        
+            </div>
+           <div class="contact"> <a href="contact.html">Contactez-Nous</a></div>
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        
+         </nav>
+<!-- start contact-->
+<section class="contacter-nous">
+    <h1 class="main-title">Contactez-Nous</h1> 
+       <div class="container">
+      <div class="details">
+        <div class="box">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>+216 56624088</p>
+        </div>
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>    
+            <p>R57M+929 Ministère des Domaines de l'État et des Affaires foncière - La Direction Générale des Immeubles Agricoles, Rue d'Iran, Tunis</p> 
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <p>effel.multiservices@gmail.com</p>
+        </div>
+      </div>
+      <div class="choix">
+        <a class="yes" data-con=".princi" href="#">principale</a>
+        <a data-con=".devis"  href="#">devis</a>
+        <a data-con=".recrutement"  href="#">recrutement</a>
+
+      </div>
+
+        <div class="contact principale"> 
+        <div class="image">
+            <img src="contactimage.jpg" alt="">
+            <span>
+               
+            merci de nous envoyer un message
+            
+            </span>
+            
+            </div>
+
+                    <form class="princi" action="principale.php" method="post">
+                        <div class="text" required> 
+                            <label for="">Votre Nom</label>
+                             <input type="text" name="nom" placeholder="votre nom" required>
+                             <i class="fa-regular fa-user"></i>
+                       
+                        </div>
+                        <div class="text" required> 
+                            <label  for="">Votre num de telephone</label>
+            
+                            <input type="tel" name="num" placeholder="votre num de telephone" required >
+                            <i class="fa-solid fa-phone-volume"></i>  
+                            </div>
+                        <div class="text" required> 
+                            <label  for="">Votre E-mail</label>
+            
+                            <input type="email" name="mail" placeholder="votre email" required>
+                            <i class="fa-light fa-at"></i>
+                        </div>
+                        <div class="text"> 
+                            <label for="">Objet</label>
+                             <input type="text" name="objet" placeholder="objet" >
+                             <i class="fa-regular fa-message"></i>                     </div>
+                        <div  class="text dernier"> 
+                            <label for="">Message</label>
+                             <textarea name="message" id="" cols="30" rows="10" placeholder="message" required></textarea>
+                             <i class="fa-regular fa-envelope"></i>
+            
+                        </div>
+            <button type="submit">envoyer <i class="fa-solid fa-paper-plane"></i> </button>
+                    </form>
+                    
+                    <form class="recrutement" action="recrutement.php" method="post" enctype="multipart/form-data">
+                        <div class="text" required> 
+                            <label for="">Votre Nom</label>
+                             <input type="text" name="nom" placeholder="votre nom" required>
+                             <i class="fa-regular fa-user"></i>
+                       
+                        </div>
+                        <div class="text" required> 
+                            <label  for="">Votre num de telephone</label>
+            
+                            <input type="tel" name="num" placeholder="votre num de telephone" required>
+                            <i class="fa-solid fa-phone-volume"></i>  
+                            </div>
+                        <div class="text" required> 
+                            <label  for="">Votre E-mail</label>
+            
+                            <input type="email" name="mail" placeholder="votre email" required >
+                            <i class="fa-light fa-at"></i>
+                        </div>
+                        <div class="text"> 
+                            <label for="">Objet</label>
+                             <input type="text" name="objet" placeholder="objet" >
+                             <i class="fa-regular fa-message"></i>                     </div>
+                        <div class="text dernier"> 
+                            <label for="">Message</label>
+                             <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                             <i class="fa-regular fa-envelope"></i>
+            
+                        </div>
+                        <input type="file" name="file" id="" required>
+            <button type="submit">envoyer <i class="fa-solid fa-paper-plane"></i> </button>
+                    </form>
+                    <form class="devis" action="devise.php" method="post">
+                        <div class="text" required> 
+                            <label for="">Votre Nom</label>
+                             <input type="text" name="nom" placeholder="votre nom" required>
+                             <i class="fa-regular fa-user"></i>
+                       
+                        </div>
+                        <div class="text" required> 
+                            <label  for="">Votre num de telephone</label>
+            
+                            <input type="tel" name="num" placeholder="votre num de telephone" required>
+                            <i class="fa-solid fa-phone-volume"></i>  
+                            </div>
+                        <div class="text" required> 
+                            <label  for="">Votre E-mail</label>
+            
+                            <input type="email" name="mail" placeholder="votre email" required >
+                            <i class="fa-light fa-at"></i>
+                        </div>
+                        <div class="text"> 
+                            <label for="">Objet</label>
+                             <input type="text" name="objet" placeholder="objet" >
+                             <i class="fa-regular fa-message"></i>                     </div>
+                        <div class="text dernier"> 
+                            <label for="">Message</label>
+                             <textarea name="message" id="" cols="30" rows="10" placeholder="message" required></textarea>
+                             <i class="fa-regular fa-envelope"></i>
+            
+                        </div>
+            <button type="submit">envoyer <i class="fa-solid fa-paper-plane"></i> </button>
+                    </form>
+                </div>
+                
+            
+
+                        
+
+
+
+       
+    
+
+              
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=36.813545,10.183034&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-i.net">top gun 123movies</a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:100%;}</style><a href="https://www.embedgooglemap.net">html google map embed</a><style>.gmap_canvas {box-shadow: 1px 2px 10px black;  overflow:hidden;background:none!important;height:350px;width:100%;}</style></div></div>
+   
+   
+   
+            </div>
+    
+    </section>
+    
+    
+    <!-- end contact-->
+
+
+
+
+
+
+<!--star footer-->
+<section class="footer">
+    <div class="container">
+        <div class="image"><img src="logo.png" alt="logo de l'entreprise"></div>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100088345226956"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="tel:+216 56624088"><i class="fa-solid fa-phone-volume"></i></a>      
+            <a href="mailto:effel.multiservices@gmail.com"><i class="fa-solid fa-envelope"></i></a>     
+             </div>
+    
+    <div>&copy; | all rights to  2023 </div>
+     
+    
+    </div>
+    
+    
+    
+    </section>
+    
+    
+    <!--end footer-->
+        
+    
+
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+       
+    
+     </ul>
+
+
+
+
+    <script>
+
+
+
+
+
+        var m=document.querySelector('.menu')
+        var links=document.querySelectorAll('.menu a')
+        var sec=document.querySelector('.about')
+        var img=document.querySelector('.image')
+        var klem=document.querySelector('.about p')
+        var lesa=document.querySelectorAll('.choix a')
+        function g(){
+            lesa.forEach((e)=>{
+        e.classList.remove('yes')
+        
+        })
+        this.classList.add('yes');
+        document.querySelectorAll('form').forEach((a)=>{
+            a.style.display='none';
+         })
+         document.querySelector(this.dataset.con).style.display='flex';
+
+        }
+        lesa.forEach((e)=>{
+        e.addEventListener('click',g)
+        
+        })
+        window.onscroll = function() {
+            if(window.scrollY >= sec.offsetTop - 200 ){
+        img.style.transform="translateX(0)"; 
+        klem.style.transform="translateX(0)"; 
+        
+        
+         }
+        };
+        
+        function closer(){
+            m.style.transform="translateX(-100%)";
+        }
+        
+        
+        function displaynavbar(){
+            m.style.transform="translateX(0)";
+        }
+        function f(){
+            links.forEach((e)=>{
+        e.classList.remove('active')
+        
+        }
+        )
+           this.classList.add('active')
+        
+        }
+        links.forEach((e)=>{
+        e.addEventListener('click',f)
+        
+        }
+        )
+        
+        
+        
+            </script>
+</body>
+</html>
